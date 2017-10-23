@@ -55,6 +55,11 @@ body {
     border-radius: 0;
   }
   
+  .logoutLblPos{
+    position:fixed;
+    right:10px;
+    top:10px;
+ }
   /*
    * Dashboard
    */

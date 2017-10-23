@@ -11,12 +11,13 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Dashboard Cliente</title>
+    <title>Dashboard Gerente de ventas</title>
+    
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="../css/dashboard_cliente.css" rel="stylesheet">
+    <link href="../css/dashboard_gerenteventas_camiones.css" rel="stylesheet">
   </head>
 
   <body>
@@ -26,7 +27,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Dashboard</a>
+      <a class="navbar-brand" href="#">Epade</a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,6 +47,12 @@
             <a class="nav-link" href="#">Help</a>
           </li>
         </ul>
+          <!-- Logout button  -->
+          <form align="right" name="form1" method="post" action="../index.html">
+            <label class="logoutLblPos">
+            <input name="submit2" type="submit" id="submit2" value="Sign out">
+            </label>
+          </form>
       </div>
     </nav>
 
@@ -54,17 +61,32 @@
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="./dashboard_gerenteventas_overview.html">Overview </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ordenes</a>
+              <a class="nav-link" href="./dashboard_gerenteventas_ordenes.html">Ordenes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dashboard_gerenteventas_listas.html">Listas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./dashboard_gerenteventas_camiones.html">Camiones<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dashboard_gerenteventas_reportes.html">Reportes</a>
             </li>
           </ul>
         </nav>
-
+        
         <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
-          <h1>Dashboard cliente</h1>
-          <h2>Section title</h2>
+            <div class = "container" align = "left">
+                <div class="button"><button class="btn btn-lg btn-primary btn-block" type="submit">Agregar usuario</button></div>
+                <div class="button"><button class="btn btn-lg btn-primary btn-block" type="submit">Modificar usuario</button></div>
+                <div class= "button"><button class="btn btn-lg btn-primary btn-block" type="submit">Eliminar usuario</button></div>
+                </div>
+                <div class= "container" align = "right"><h1>Dashboard Gerente de ventas</h1></div> 
+
+          <h2>Ultimas ordenes recibidas</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
