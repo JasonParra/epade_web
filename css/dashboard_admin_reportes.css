@@ -15,6 +15,7 @@ body {
     padding-bottom: 9px;
     margin-bottom: 20px;
     border-bottom: 1px solid #eee;
+    float: left;
   }
   
   /*
@@ -52,7 +53,18 @@ body {
     max-width: 330px;
     padding: 15px;
     margin: 0 auto;
+    top:50%;
     float: left;
+  }
+  
+  .logoutLblPos{
+       position:fixed;
+       right:10px;
+       top:10px;
+    }
+    
+  .wrapper {
+    text-align: center;
   }
   /*
    * Dashboard
