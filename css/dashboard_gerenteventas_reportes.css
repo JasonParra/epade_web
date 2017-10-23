@@ -55,6 +55,12 @@ body {
     border-radius: 0;
   }
   
+  .button {
+    max-width: 330px;
+    /* padding: 1px; */
+    margin:auto;
+  }
+
   .logoutLblPos{
     position:fixed;
     right:10px;

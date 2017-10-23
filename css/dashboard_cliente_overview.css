@@ -54,6 +54,14 @@ body {
   .sidebar .nav-link {
     border-radius: 0;
   }
+
+  .button {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    top:50%;
+    float: left;
+  }
   
   .logoutLblPos{
     position:fixed;
