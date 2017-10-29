@@ -26,27 +26,16 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Settings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Help</a>
-            </li>
+          
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
+         
               <!-- Logout button  -->
             <form align="right" name="form1" method="post" action="../index.html">
               <label class="logoutLblPos">
-              <input name="submit2" type="submit" id="submit2" value="Sign out">
+                <input type="submit" class="btn btn-primary" value="Sign out">
               </label>
             </form>
-          </form>
+        
         </div>
       </nav>
     </header>
@@ -69,13 +58,13 @@
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
        
-          <section class="row text-center placeholders">
-          <!-- <div class = "container" align = "center"> -->
-          <div class="button"><button class="btn btn-lg btn-primary btn-block" type="submit">Agregar reporte</button></div>
-          <div class="button"><button class="btn btn-lg btn-primary btn-block" type="submit">Modificar reporte</button></div>
-          <div class= "button"><button class="btn btn-lg btn-primary btn-block" type="submit">Eliminar reporte</button></div>
-          <!-- </div> -->
-          </section>
+            <div class= "wrapper text-center">
+                <div class="btn-group">
+                    <div class="button"><button class="btn btn-lg btn-primary btn-block" type="submit">Agregar reporte</button></div>
+                   <div class="button"><button class="btn btn-lg btn-primary btn-block" type="submit">Modificar reporte</button></div>
+                   <div class= "button"><button class="btn btn-lg btn-primary btn-block" type="submit">Eliminar reporte</button></div> 
+               </div>
+            </div>
           
           <h2>Reportes generados recientemente</h2>
             <div class="table-responsive">

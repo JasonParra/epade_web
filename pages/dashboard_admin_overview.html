@@ -12,7 +12,8 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Custom styles for this template -->
     <link href="../css/dashboard_admin_overview.css" rel="stylesheet">
   </head>
@@ -27,27 +28,15 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item"> 
-              <a class="nav-link" href="#">Settings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Help</a>
-            </li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
+         
             <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Logout button //////////////////////////////////////////////////////////////// -->
             <form align="right" name="form1" method="post" action="../index.html">
               <label class="logoutLblPos">
-              <input name="submit2" type="submit" id="submit2" value="Sign out">
+                <input type="submit" class="btn btn-primary" value="Sign out">
               </label>
             </form>
-          </form>
+      
         </div>
       </nav>
     </header>
@@ -67,11 +56,15 @@
             </li>
           </ul>
         </nav>
+      </div>
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1>Bienvenido, Jorge Soto Bravo</h1>
-
+          <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
           <h2>Usuarios modificados recientemente</h2>
+          
+         
+         
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -83,7 +76,7 @@
                   <th>Estatus</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="myTable">
                 <tr>
                   <td>001</td>
                   <td>Jorge</td>
@@ -115,10 +108,20 @@
               </tbody>
             </table>
           </div>
-        </main>
-      </div>
-    </div>
+          <script>
+              $(document).ready(function(){
+                $("#myInput").on("keyup", function() {
+                  var value = $(this).val().toLowerCase();
+                  $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                  });
+                });
+              });
+        </script>
+     
+      </main>
 
+        
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

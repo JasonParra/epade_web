@@ -48,30 +48,28 @@ body {
   .sidebar .nav-link {
     border-radius: 0;
   }
+  
   .button {
     max-width: 330px;
     padding: 10px;
-    margin: auto;
+    margin: 0 auto;
+    top:50%;
     float: left;
   }
   
-  .logoutLblPos {
+  .logoutLblPos{
     position:fixed;
     right:10px;
     top:10px;
- }
+  }
 
- .hidden {
-   display:none;
-   margin: auto;
-   width: 700px;
-   
- }
-
- .buttonsubmit {
-margin-bottom: -75px;
- }
-
+  .hidden {
+    display:none;
+    margin: auto;
+    width: 700px;
+    
+  }
+  
   /*
    * Dashboard
    */

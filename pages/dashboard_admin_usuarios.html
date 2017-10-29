@@ -1,7 +1,7 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -11,128 +11,256 @@
     <title>Dashboard Admin</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="../css/dashboard_admin_usuarios.css" rel="stylesheet">
-  </head>
-  <body>
-     
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Epade</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Settings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Help</a>
-            </li>
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <!-- Logout button  -->
-            <form align="right" name="form1" method="post" action="../index.html">
-                <label class="logoutLblPos">
-                <input name="submit2" type="submit" id="submit2" value="Sign out">
-                </label>
-              </form>
-          </form>
-        </div>
-      </nav>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Epade</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                   
+                </ul>
+
+                <!-- Logout button  -->
+                <form align="right" name="form1" method="post" action="../index.html">
+                    <label class="logoutLblPos">
+                        <input type="submit" class="btn btn-primary" value="Sign out">
+                    </label>
+                </form>
+
+            </div>
+        </nav>
     </header>
 
     <div class="container-fluid">
-      <div class="row">
-        <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="./dashboard_admin_overview.html">Overview </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./dashboard_admin_usuarios.html">Usuarios<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./dashboard_admin_reportes.html">Reportes</a>
-            </li>
-          </ul>
-        </nav>
-
-
-        <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
-            <section class="row text-center placeholders">
-                 <div class="button"><button class="btn btn-lg btn-primary btn-block" type="submit">Agregar usuario</button></div>
-                <div class="button"><button class="btn btn-lg btn-primary btn-block" type="submit">Modificar usuario</button></div>
-                <div class= "button"><button class="btn btn-lg btn-primary btn-block" type="submit">Eliminar usuario</button></div> 
-                </section>
-
-          <h2>Lista de usuarios</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Nombre</th>
-                  <th>Apellido</th>
-                  <th>Ocupación</th>
-                  <th>Estatus</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>001</td>
-                  <td>Jorge</td>
-                  <td>Soto</td>
-                  <td>Gerente</td>
-                  <td>Activo</td>
-                </tr>
-                <tr>
-                  <td>002</td>
-                  <td>Jason</td>
-                  <td>Parra</td>
-                  <td>Vendedor</td>
-                  <td>Activo</td>
-                </tr>
-                <tr>
-                  <td>003</td>
-                  <td>Rafael</td>
-                  <td>White</td>
-                  <td>Chofer</td>
-                  <td>Activo</td>
-                </tr>
-                <tr>
-                  <td>004</td>
-                  <td>Gabriel</td>
-                  <td>Silfa</td>
-                  <td>Almacen</td>
-                  <td>Activo</td>
-                  
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
-      </div>
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dashboard_admin_overview.html">Overview </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./dashboard_admin_usuarios.html">Usuarios
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dashboard_admin_reportes.html">Reportes</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    
+
+
+
+    <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+        <div class="wrapper text-center">
+            <div class="btn-group">
+                <div class="button">
+                    <button onclick="addUser()" class="btn btn-lg btn-primary btn-block" type="submit">Agregar usuario</button>
+                </div>
+                <div class="button">
+                    <button onclick="modifyUser()" class="btn btn-lg btn-primary btn-block" type="submit">Modificar usuario</button>
+                </div>
+                <div class="button">
+                    <button onclick = "modifyUser()" class="btn btn-lg btn-primary btn-block" type="submit">Eliminar usuario</button>
+                </div>
+            </div>
+        </div>
+        <!--//////////////////////////////// Boton para agregar usuario \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+        <div id="addUser" class="hidden justify-content-center">
+
+            <div class="jumbotron">
+
+                <div class="form-group">
+                    <label for="sel1">Seleccione tipo de cuenta a crear:</label>
+                    <select class="form-control" id="sel1" placeholder="Seleccione">
+                        <option>Chofer</option>
+                        <option>Cliente</option>
+                        <option>Encargado de Almacen</option>
+                        <option>Gerente de ventas</option>
+                    </select>
+                </div>
+                <label for="Sexo">Sexo:</label> &ensp;
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Hombre</label> &ensp;
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Mujer</label>
+
+                <div class="form-group">
+                    <label for="usr">Nombres:</label>
+                    <input type="text" class="form-control" id="nombres">
+                </div>
+
+                <div class="form-group">
+                    <label for="usr">Apellidos:</label>
+                    <input type="text" class="form-control" id="apellidos">
+                </div>
+
+                <div class="form-group">
+                        <label for="usr">Cédula:</label>
+                        <input type="text" class="form-control" placeholder="00-0000000-0" id="cedula">
+                    </div>
+
+                <div class="form-group">
+                    <label for="usr">Nombre de Usuario:</label>
+                    <input type="text" class="form-control" id="user">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Re-escriba la Contraseña:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+
+
+                <br>
+                <input class="btn btn-success buttonsubmit" type="submit" value="Submit">
+            </div>
+
+        </div>
+
+         <!--//////////////////////////////// Boton para modificar usuario \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+        <div id="modifyUser" class="hidden">
+            
+                    <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
+                
+            </div>
+            
+        </div>
+
+         <!--//////////////////////////////// Boton para eliminar usuario \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+         <div id="deleteUser" class="hidden">
+                <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
+            </div>
+
+        <!--//////////////////// Script para boton agregar usuario, toggle hide/show \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <script>
+            function addUser() {
+                var x = document.getElementById("addUser");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <!--//////////////////// Script para boton modificar usuario, toggle hide/show \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <script>
+            function modifyUser() {
+                var x = document.getElementById("modifyUser");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+
+        <!--//////////////////// Script para boton eliminar usuario, toggle hide/show \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+        <script>
+                function deleteUser() {
+                    var x = document.getElementById("deleteUser");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+
+        <h2>Lista de usuarios</h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Ocupación</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                        <td>001</td>
+                        <td>Jorge</td>
+                        <td>Soto</td>
+                        <td>Gerente</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jason</td>
+                        <td>Parra</td>
+                        <td>Vendedor</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Rafael</td>
+                        <td>White</td>
+                        <td>Chofer</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Gabriel</td>
+                        <td>Silfa</td>
+                        <td>Almacen</td>
+                        <td>Activo</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("#myInput").on("keyup", function () {
+                    var value = $(this).val().toLowerCase();
+                    $("#myTable tr").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+        </script>
+    </main>
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
     <script src="../../../../dist/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

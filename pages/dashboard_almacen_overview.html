@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>Dashboard Encargado de Almacen</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/dashboard_almacen_overview.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Epade</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+         
+        </ul>
+
+        <!--\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Logout button //////////////////////////////////////////////////////////////// -->
+        <form align="right" name="form1" method="post" action="../index.html">
+          <label class="logoutLblPos">
+            <input type="submit" class="btn btn-primary" value="Sign out">
+          </label>
+        </form>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="./dashboard_almacen_overview.html">Overview
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./dashboard_almacen_productos.html">Productos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./dashboard_almacen_reportes.html">Reportes</a>
+            </li>
+          </li>
+        </ul>
+      </nav>
+
+      <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+        <h1>Bienvenido, Jorge Soto Bravo</h1>
+
+        <h2>Usuarios modificados recientemente</h2>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Ocupación</th>
+                <th>Estatus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>Jorge</td>
+                <td>Soto</td>
+                <td>Gerente</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>Jason</td>
+                <td>Parra</td>
+                <td>Vendedor</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>Rafael</td>
+                <td>White</td>
+                <td>Chofer</td>
+                <td>Activo</td>
+              </tr>
+              <tr>
+                <td>004</td>
+                <td>Gabriel</td>
+                <td>Silfa</td>
+                <td>Almacen</td>
+                <td>Activo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../../../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../../../dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
